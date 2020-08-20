@@ -1,6 +1,6 @@
 package ru.geekbrains.java2;
 
-public class Robot implements RunAble, JumpAble {
+public class Robot implements RunAble {
 
     private String name;
     private int runAbility;
@@ -25,5 +25,16 @@ public class Robot implements RunAble, JumpAble {
         System.out.println("Робот "+ name +" прыгнул на "+ h +" метров");
     }
 
+    public String getName () {
+        return this.name;
+    }
+
+    public int getRunAbility () {
+        return this.runAbility;
+    }
+
+    public int getJumpAbility () {
+        return this.jumpAbility;
+    }
 
 }

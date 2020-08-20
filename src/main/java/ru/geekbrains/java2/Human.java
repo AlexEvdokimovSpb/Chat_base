@@ -1,6 +1,6 @@
 package ru.geekbrains.java2;
 
-public class Human implements RunAble, JumpAble {
+public class Human implements RunAble {
 
     private String name;
     private int runAbility;
@@ -24,5 +24,18 @@ public class Human implements RunAble, JumpAble {
     public void jump(int h) {
         System.out.println("Человек "+ name +" прыгнул на "+ h +" метров");
     }
+
+    public String getName () {
+        return this.name;
+    }
+
+    public int getRunAbility () {
+        return this.runAbility;
+    }
+
+    public int getJumpAbility () {
+        return this.jumpAbility;
+    }
+
 
 }
